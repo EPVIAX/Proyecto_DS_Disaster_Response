@@ -52,6 +52,7 @@ def clean_data(df):
     # Concatenate the original dataframe with the new categories dataframe
     df = pd.concat([df, categories], axis=1)
     df.drop_duplicates(subset='id', inplace=True)
+    df['related'] = df['related'].replace(2, 1)
     
     return df
 

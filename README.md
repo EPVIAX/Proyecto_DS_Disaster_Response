@@ -19,7 +19,7 @@
 <a name="descripton"></a>
 ## Description
 
-This Project is part of Data Science Nanodegree Program by Udacity in collaboration with Figure Eight. The dataset contains pre-labelled tweet and messages from real-life disaster events. The project aim is to build a Natural Language Processing (NLP) model to categorize messages on a real time basis.
+This Project is part of Data Science Nanodegree Program by Udacity. The dataset contains pre-labelled tweet and messages from real-life disaster events. The project aim is to build a Natural Language Processing (NLP) model to categorize messages on a real time basis.
 
 This project is divided in the following key sections:
 
@@ -32,7 +32,7 @@ This project is divided in the following key sections:
 
 <a name="dependencies"></a>
 ### Dependencies
-* Python 3.5+
+* Python 
 * Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
 * Natural Language Process Libraries: NLTK
 * SQLlite Database Libraqries: SQLalchemy
@@ -43,7 +43,7 @@ This project is divided in the following key sections:
 ### Installing
 To clone the git repository:
 ```
-git clone https://github.com/canaveensetia/udacity-disaster-response-pipeline.git
+git clone https://github.com/EPVIAX/Proyecto_DS_Disaster_Response.git
 ```
 <a name="execution"></a>
 ### Executing Program:
@@ -107,15 +107,3 @@ You can use **ML Pipeline Preparation Notebook** to re-train the model or tune i
 3. The main page shows some graphs about training dataset, provided by Figure Eight
 
 ![Main Page](graficas/main_page.png)
-
-4. Sample run of process_data.py
-
-![Process Data](graficas/process_data.png)
-
-5. Sample run of train_classifier.py
-
-![Train Classifier without Category Level Precision Recall](graficas/train_classifier.png)
-
-6. Sample run of train_classifier.py with precision, recall etc. for each category
-
-![Train Classifier with Category Level Precision Recall](graficas/train_classifier_category_precision_recall.png)

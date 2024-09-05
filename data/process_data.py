@@ -22,9 +22,9 @@ def load_data(messages_filepath, categories_filepath):
 
 def clean_data(df):
     '''
-    Input:
+    Entrada:
         df: Merged dataset from messages and categories
-    Output:
+    Salida:
         df: Cleaned dataset
     '''
     # Create a dataframe of the 36 individual category columns
@@ -52,6 +52,7 @@ def clean_data(df):
     # Concatenate the original dataframe with the new categories dataframe
     df = pd.concat([df, categories], axis=1)
     df.drop_duplicates(subset='id', inplace=True)
+    # Cambio de valores que tienen 2 x 1
     df['related'] = df['related'].replace(2, 1)
     
     return df
@@ -59,15 +60,15 @@ def clean_data(df):
 
 def save_data(df, database_filename):
     '''
-    Save df into sqlite db
+    Guardar df into sqlite db
     Input:
-        df: cleaned dataset
-        database_filename: database name, e.g. DisasterMessages.db
-    Output: 
+        df: dataset limipio
+        database_filename: nombre de la base de datos, e.g. DisasterMessages.db
+    Salida: 
         A SQLite database
     '''
     engine = create_engine('sqlite:///' + database_filename)
-    df.to_sql('DisasterMessages', engine, index=False) 
+    df.to_sql('DisasterResponse', engine, index=False) 
 
 
 def main():

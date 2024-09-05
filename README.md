@@ -1,7 +1,7 @@
 # Proyecto DS Disaster Response Pipeline
 # Disaster Response Pipeline Project (Udacity - Data Science Nanodegree)
 
-![Intro Pic](screenshots/intro.png)
+![Intro Pic](graficas/intro.png)
 
 
 ## Table of Contents
